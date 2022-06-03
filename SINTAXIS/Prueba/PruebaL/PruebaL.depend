@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1558914189 source:c:\gnuwin32\bin\lex.yy.c
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<io.h>
+	<stdlib.h>
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+

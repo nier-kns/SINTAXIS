@@ -1,0 +1,35 @@
+1- 	Descargar el instalador de flex y bison.
+
+2- 	Instalar bison en una carpeta fuera de C:\Archivos de Programa para poder ejecutar
+	sin necesidad de tener permisos. La carpeta donde se instala todo se llama GNUwin32.
+
+3- 	Panel de control->sistema->opciones avanzadas del sistema->variables del entorno
+	dentro de variables del sistema (no las del usuario) bajar hasta que en
+	la columna variable aparezca Path. Hacer click -> editar
+	Añadir al final del ; C:\GnuWin32\bin (o el lugar donde lo hayan instalado) 
+	(notar que se separan los diferentes paths con ;)
+
+5- 	Abrir codeblocks, ir a file (archivo), new (nuevo), project (projecto)
+
+6- 	Dentro de codeblocks, sobre el proyecto hacer click derecho->build options
+	(es la 2nda opcion arriba de propiedades). Aparecerá una ventana, ir vayan a la segunda
+	pestaña, que dice Linker settings, y añadir dos librerias. Estas dos librerias 
+	estan en C:\GnuWin32\lib y se llaman libfl.a y liby.a
+
+7- 	Abrir CMD como administrador (tecla windows + r -> cmd->click derecho->abrir como administrador)
+	dentro de CMD tipear "cd C:\GnuWin32\bin" sin las comillas (pueden copiar y pegar si 
+	copian la direccion, hacen click derecho y pegar en la pantalla de cmd)
+
+8- 	Colocar los archivos ".l" y ".y" dentro de la carpeta C:\GnuWin32\bin
+
+9- 	En CMD, tipear "flex nombredelarchivo.l" (cambiando nombredelarchivo por cualsea el nombre 
+	que le pusieron a su archivo)(sin comillas)
+
+10- 	Igualmente, tipear "bison.exe -d nombredelarchivo.y" (cambiando nombredelarchivo por cual sea el nombre 
+	que le pusieron a su archivo)(sin comillas)
+
+11- 	En este punto se habrán creado 3 archivos en la carpeta: lex.yy.c, nombredelarchivo.tab.c, y nombredelarchivo.tab.h
+
+12- 	Añadir los tres al proyecto de codeblocks (click derecho al proyecto->add (añadir) -> elijen los tres)
+
+13- 	Compilar y correr

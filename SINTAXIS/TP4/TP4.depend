@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1574648494 source:c:\gnuwin32\bin\tp4bison.tab.c
+	<math.h>
+	<stdio.h>
+	<ctype.h>
+	<string.h>
+	<stdlib.h>
+	<stddef.h>
+	<libintl.h>
+	<alloca.h>
+	<malloc.h>
+	<stdlib.h>
+	<stdlib.h>
+	<stdio.h>
+
+1574658587 source:c:\gnuwin32\bin\lex.yy.c
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<io.h>
+	<stdlib.h>
+	"TP4Bison.tab.h"
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+	<ctype.h>
+	<stdlib.h>
+
+1574666606 c:\gnuwin32\bin\tp4bison.tab.h
+
